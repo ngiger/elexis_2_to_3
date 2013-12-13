@@ -113,7 +113,7 @@ NewExtensionPoints = {
    'point="ch.elexis.Sidebar">' => 'point="ch.elexis.core.ui.Sidebar">',
    'point="ch.elexis.ServiceRegistry">' => 'point="ch.elexis.core.ui.ServiceRegistry">',
   'point="ch.elexis.RechnungsManager"' => 'point="ch.elexis.core.ui.RechnungsManager"',
-  'point="ch.elexis.Verrechnungscode">' => 'point="ch.elexis.core.ui.Verrechnungscode">,
+  'point="ch.elexis.Verrechnungscode">' => 'point="ch.elexis.core.ui.Verrechnungscode">',
 # '' => '',
   
   }
@@ -121,7 +121,6 @@ NewExtensionPoints = {
 V_2_to_3 = Struct.new("V_2_to_3", :v2, :v3) 
 ReplaceByRegexp = [
   V_2_to_3.new(/(\W)Hub(\W)/,'\1CoreHub\2'),
-#  V_2_to_3.new(/(\W)runInUi(\W)/ , '\1run\2'),
   V_2_to_3.new(/(\W)ElexisEventListenerImpl(\W)/ , '\1ElexisUiEventListenerImpl\2'),
   # Handle neu setImageDescriptor
   # Elexis 2.1.7: setImageDescriptor(Desk.getImageDescriptor(Desk.IMG_NEXT));
